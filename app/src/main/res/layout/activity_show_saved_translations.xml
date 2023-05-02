@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:id="@+id/showTranslationsPage"
+    tools:context=".ShowSavedTranslations">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/black_shade"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:id="@+id/dateTextLayout"
+                app:boxStrokeColor="@color/teal_700"
+                android:textColorHint="@color/white"
+                android:hint="Date"
+                app:hintTextColor="@color/white"
+                android:labelFor="@id/lang1EditText"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/white"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/datePickerBtn"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                app:cornerRadius="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="#590de4"
+                android:textColor="@color/white"
+                app:iconTint="@color/white"
+                app:icon="@drawable/baseline_calendar_month_24"
+                android:layout_toRightOf="@id/dateTextLayout"
+                android:text="Pick Date"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/showBtn"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                app:cornerRadius="30dp"
+                android:layout_below="@id/dateTextLayout"
+                android:layout_centerHorizontal="true"
+                app:icon="@drawable/baseline_search_24"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#590de4"
+                android:textColor="@color/white"
+                app:iconTint="@color/white"
+                android:text="Show Translations"
+                />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ListView
+        android:id="@+id/translationsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+
+
+        />
+
+
+</LinearLayout>

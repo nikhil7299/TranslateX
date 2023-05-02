@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <style name="Theme.App" parent="Theme.Material3.*">-->
+<!--        <item name="materialCalendarTheme">@style/ThemeOverlay.App.DatePicker</item>-->
+
+<!--    </style>-->
+
+<!--    <style name="ThemeOverlay.App.DatePicker" parent="@style/ThemeOverlay.Material3.MaterialCalendar">-->
+<!--&lt;!&ndash;        <item name="colorPrimary">@color/shrine_pink_100</item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item name="colorOnPrimary">@color/shrine_pink_900</item>&ndash;&gt;-->
+<!--        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>-->
+<!--        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>-->
+<!--&lt;!&ndash; Customize text field of the text input mode. &ndash;&gt;-->
+<!--        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>-->
+<!--    </style>-->
+<!--    -->
+</resources>

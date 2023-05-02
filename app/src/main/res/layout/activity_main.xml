@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black_shade"
+        android:padding="8dp"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/teal_700"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="40dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TranslateX"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/camMicText"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:text="Get text Using Mic"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:paddingStart="8dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"
+                />
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/camBtn"-->
+<!--                app:cornerRadius="30dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_width="110dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                app:iconSize="15dp"-->
+<!--                android:text="Camera"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textAllCaps="false"-->
+<!--                app:iconPadding="2dp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                app:icon="@drawable/baseline_camera_alt_24"-->
+<!--                android:layout_toRightOf="@+id/camMicText"-->
+<!--                />-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/micBtn"
+                app:cornerRadius="30dp"
+                android:layout_centerVertical="true"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                app:iconSize="15dp"
+                android:text="Mic"
+                android:textSize="12sp"
+                android:padding="12dp"
+                app:iconPadding="1dp"
+                android:textAllCaps="false"
+                android:layout_marginStart="98dp"
+                android:backgroundTint="#590de4"
+                android:textColor="@color/white"
+                app:iconTint="@color/white"
+                app:icon="@drawable/baseline_mic_24"
+                android:layout_toRightOf="@+id/camMicText"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+            <Spinner
+                android:layout_centerVertical="true"
+                android:id="@+id/lang1Spinner"
+                android:layout_marginStart="5dp"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/txtToSpeech1"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                app:cornerRadius="30dp"
+                app:iconSize="15dp"
+                android:text="Speak"
+                app:iconPadding="1dp"
+                android:textSize="12sp"
+                android:layout_marginStart="2dp"
+                android:backgroundTint="#590de4"
+                android:textColor="@color/white"
+                app:iconTint="@color/white"
+                app:icon="@drawable/baseline_contactless_24"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/lang1Spinner"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/clearBtn1"
+                app:cornerRadius="30dp"
+                android:layout_centerVertical="true"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                app:iconSize="15dp"
+                app:iconPadding="1dp"
+                android:padding="12dp"
+                android:text="Clear"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#590de4"
+                android:textColor="@color/white"
+                app:iconTint="@color/white"
+                app:icon="@drawable/baseline_remove_circle_24"
+                android:layout_toRightOf="@+id/txtToSpeech1"
+                />
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:boxStrokeColor="@color/teal_700"
+            android:textColorHint="@color/white"
+            android:hint="Enter Text Here"
+            app:hintTextColor="@color/white"
+            android:labelFor="@id/lang1EditText"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lang1EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:inputType="textImeMultiLine"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/translateBtn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cornerRadius="30dp"
+            android:layout_gravity="center"
+            android:text="Translate"
+            app:icon="@drawable/baseline_translate_24"
+            app:iconGravity="textStart"
+            android:textColor="@color/white"
+            app:iconTint="@color/white"
+            android:backgroundTint="#590de4"
+            android:layout_margin="5dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            >
+            <Spinner
+
+                android:layout_centerVertical="true"
+                android:id="@+id/lang2Spinner"
+                android:layout_marginStart="5dp"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/txtToSpeech2"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                app:cornerRadius="30dp"
+                app:iconSize="15dp"
+                android:text="Speak"
+                app:iconPadding="1dp"
+                android:textSize="12sp"
+                android:layout_marginStart="2dp"
+                android:backgroundTint="#590de4"
+                android:textColor="@color/white"
+                app:iconTint="@color/white"
+                app:icon="@drawable/baseline_contactless_24"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/lang2Spinner"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveBtn"
+                app:cornerRadius="30dp"
+                android:padding="12dp"
+                android:layout_centerVertical="true"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                app:iconSize="15dp"
+                android:text="Save"
+                app:iconPadding="1dp"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#590de4"
+                android:textColor="@color/white"
+                app:iconTint="@color/white"
+                app:icon="@drawable/baseline_download_for_offline_24"
+                android:layout_toRightOf="@+id/txtToSpeech2"
+
+                />
+
+        </RelativeLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lang2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="top"
+        android:textColor="@color/white"
+        android:gravity="top"
+        style="@style/Widget.MaterialComponents.Snackbar.TextView"
+        android:shadowRadius="30"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/showSavedBtn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:cornerRadius="30dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#590de4"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        android:text="Show Saved Translations"
+        android:layout_marginTop="10dp"
+        />
+
+
+    </LinearLayout>
+
